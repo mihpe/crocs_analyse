@@ -11,6 +11,7 @@ Das Python-Skript "crocs_analyse.py" verabeitet eine CSV-Datei mit Crocs Clogs B
 - Windows, macOS, or Linux
 - Python 3.9 oder neuer
 - Conda
+- Git
 
 ## Installation über Windows
 ```console
