@@ -144,7 +144,7 @@ def lsa_analysis(vector,dictionary,review):
     lsa_dataframe["Review"]=review
     lsa_dataframe[["Review","Thema1","Thema2","Thema3","Thema4"]].to_csv("lsa_review.csv")
     for i in range(4):
-        print("LSA: Wichtige Bewertungen zum Thema"+str(i+1)+":")
+        print("LSA: Wichtige Bewertungen zum Thema "+str(i+1)+":")
         print(lsa_dataframe[["Review","Thema"+str(i+1)]].sort_values(by="Thema"+str(i+1),ascending=False)[:5])
         print(" ")
 
