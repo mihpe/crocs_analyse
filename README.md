@@ -19,7 +19,7 @@ In dieser wechselt man nun in das Verzeichnis in welches das Programm herunterge
 Danach ist folgendes Auszuführen:
 ```console
 git clone PFADzuRepo
-conda env create -n crocs_anaylse --file conda_crocs.yaml
+conda env create -n crocs_anaylse --file conda_crocs_analyse.yaml
 ```
 
 ## Ausführung des Programmes
