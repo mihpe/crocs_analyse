@@ -4,8 +4,8 @@ Das Python-Skript "crocs_analyse.py" verabeitet eine CSV-Datei mit Crocs Clogs B
 ## Hauptfunktionen
 - Textbereinung durch Entfernung von Satz-, Sonder-, Zahlenzeichen und Stoppwörter sowie Lemmatisierung.
 - Vektorisierung mithilfe von Bag of Words und TF-IDF.
-- Themenextraktion mithilfe von Latent Semantic Analysis und Latent Dirichlet Allocation
-- Themenanzahlbestimmung durch Coherence Score
+- Themenextraktion mithilfe von Latent Semantic Analysis und Latent Dirichlet Allocation.
+- Themenanzahlbestimmung durch Coherence Score.
 
 ## System Bedingungen
 - Windows, macOS, or Linux
