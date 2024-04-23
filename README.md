@@ -14,6 +14,9 @@ Das Python-Skript "crocs_analyse.py" verabeitet eine CSV-Datei mit Crocs Clogs B
 - Git
 
 ## Installation über Windows
+Zunächste wird die Anaconda Prompt ausgeführt. 
+In dieser wechselt man nun in das Verzeichnis in welches das Programm heruntergelanden werden soll.
+Danach ist folgendes Auszuführen:
 ```console
 git clone PFADzuRepo
 conda env create -n crocs_anaylse --file conda_crocs.yaml
