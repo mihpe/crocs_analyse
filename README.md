@@ -10,8 +10,8 @@ Das Python-Skript "crocs_analyse.py" verabeitet eine CSV-Datei mit Crocs Clogs B
 ## System Bedingungen
 - Windows, macOS, or Linux
 - Python 3.9 oder neuer
-- Conda
 - Git
+- Conda
 
 ## Installation über Windows
 Zunächste wird die Anaconda Prompt ausgeführt. 
