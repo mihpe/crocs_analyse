@@ -31,4 +31,5 @@ python .\crocs_analyse.py
 ## Ausgabe
 Als Ausgabe erhält man wichtige Bewertung und Wörter zu Themen als Ergebnis der LSA und wichtige Wörter zu Themen als Ergebnis der LDA.
 Zusätzlich werden CSV Datein für BoW TF-IDF, LSA, LDA und Cohrence Score Ergebnisse im Verzeichnis erstellt.
+Diese finden sich auf in dem Ordner Ergebnisse wieder
 
