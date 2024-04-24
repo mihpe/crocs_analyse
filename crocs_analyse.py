@@ -98,7 +98,7 @@ def lemmatization_words(review):
 
 
 # 3. Kovertierung in numerische Vektoren
-# 3.1 Bag Of Words und Dicontary
+# 3.1 Bag Of Words und Dictionary
 def create_bow(review):
     """
     Hier wird mithilfe der SKLearn Bibliothek ein Bag of Words erstellt.
@@ -114,7 +114,7 @@ def create_bow(review):
     return bow, dic
 
 
-# 3.2 Create TF-IDF
+# 3.2 TF-IDF und Dictionary
 def create_tfidf(review):
     """
     Hier wird mithilfe der SKLearn Bibliothek eine TF-IDF Matrix erstellt.
