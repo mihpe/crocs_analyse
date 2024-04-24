@@ -8,7 +8,7 @@ Das Python-Skript "crocs_analyse.py" verabeitet eine CSV-Datei mit Crocs Clogs B
 - Themenanzahlbestimmung durch Coherence Score.
 
 ## System Bedingungen
-- Windows, macOS, or Linux
+- Windows, macOS oder Linux
 - Python 3.9 oder neuer
 - Git
 - Conda
