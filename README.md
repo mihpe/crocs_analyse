@@ -34,7 +34,7 @@ Zusätzlich werden CSV Datein für BoW TF-IDF, LSA, LDA und Cohrence Score Ergeb
 Diese finden sich auf in dem Ordner Ergebnisse wieder
 
 ## Annahme bei Ausführung der SDA Analyse
-| Anzahl Themen | Score |
+| Anzahl Themen | Coherence Score |
 |---------------|-------|
 | 2             | -1.8004033986424073      |
 | 3             | -1.8719558810633241      |
