@@ -18,7 +18,7 @@ Zunächste wird die Anaconda Prompt ausgeführt.
 In dieser wechselt man nun in das Verzeichnis in welches das Programm heruntergelanden werden soll.
 Danach ist folgendes Auszuführen:
 ```console
-git clone PFADzuRepo
+git clone https://github.com/mihpe/crocs_analyse.git
 conda env create -n crocs_anaylse --file conda_crocs_analyse.yaml
 ```
 
