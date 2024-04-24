@@ -17,13 +17,13 @@ Das Python-Skript "crocs_analyse.py" verabeitet eine CSV-Datei mit Crocs Clogs B
 Zunächste wird die Anaconda Prompt ausgeführt. 
 In dieser wechselt man nun in das Verzeichnis in welches das Programm heruntergelanden werden soll.
 Danach ist folgendes Auszuführen:
-```console
+```cmd
 git clone https://github.com/mihpe/crocs_analyse.git
 conda env create -n crocs_anaylse --file conda_crocs_analyse.yaml
 ```
 
 ## Ausführung des Programmes
-```console
+```cmd
 conda activate crocs_anaylse
 python .\crocs_analyse.py
 ```
