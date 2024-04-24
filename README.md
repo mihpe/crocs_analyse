@@ -1,4 +1,4 @@
-# Crocs Review Analysis :shoe::computer:
+# Crocs Review Analysis :shoe:
 Das Python-Skript "crocs_analyse.py" verabeitet eine CSV-Datei mit Crocs Clogs Bewertungen als Eingabe und führt  Textbereinigung, Vektorisierung und Themenextraktion mithilfe von NLP-Techniken durch.
 
 ## Hauptfunktionen
