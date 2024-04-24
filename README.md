@@ -33,3 +33,17 @@ Als Ausgabe erhält man wichtige Bewertung und Wörter zu Themen als Ergebnis de
 Zusätzlich werden CSV Datein für BoW TF-IDF, LSA, LDA und Cohrence Score Ergebnisse im Verzeichnis erstellt.
 Diese finden sich auf in dem Ordner Ergebnisse wieder
 
+## Annahme bei Ausführung der SDA Analyse
+| Anzahl Themen | Score |
+|---------------|-------|
+| 2             | -1.8004033986424073      |
+| 3             | -1.8719558810633241      |
+| 4             | -2.3410281884618303      |
+| 5             | -1.9898444765663512      |
+| 6             | -2.2675065340414764      |
+| 7             |  -2.449892295575311      |
+| 8             |  -2.229327494625168      |
+| 9             | -2.1397258987342602      |
+| 10            | -2.4156968020645504      |
+
+Deshalb wurde die Themenanzahl 3 gewählt.
