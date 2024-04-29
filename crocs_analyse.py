@@ -14,9 +14,9 @@ nltk.download('wordnet')
 # 1. Einlesen und Bearbeitung der CSV
 def csv_review_filter(csv_file):
     """ 
-    Diese Funktion  nimmt als Input die CSV-Datei 
+    Diese Funktion nimmt als Input die CSV-Datei 
     und sucht in dieser nach 1.0 oder 2.0 Bewertungen.
-    Anschließend werden von diesen Bewertungen nur das Textfeld zurückgegeben.
+    Anschließend werden von diesen Bewertungen nur die Textfelder zurückgegeben.
     """
     bad_reviews=[]
     with open(csv_file,"r",encoding="utf-8") as csvreview:
@@ -35,7 +35,7 @@ def remove_bad_char(review):
     """ 
     Diese Funktion nimmt ein Array mit Strings als Input 
     und entfernt alle Zeichen, welche nicht alphabetisch oder Leerzeichen sind.
-    Anschließend werden alle Zeichen in Kleinbuchstaben an in einen 
+    Anschließend werden alle Zeichen in Kleinbuchstaben in einen 
     Array hinzugefügt, welches zurückgegeben wird.
     """
     clean_reviews=[]
@@ -102,9 +102,9 @@ def lemmatization_words(review):
 def create_bow(review):
     """
     Hier wird mithilfe der SKLearn Bibliothek ein Bag of Words erstellt.
-    Dabei werden nur Wörter betrachtet, der Dokumentenhäufigkeit mindestes bei 12 liegt.
+    Dabei werden nur Wörter betrachtet, deren Dokumentenhäufigkeit mindestes bei 12 liegt.
     Mithilfe der Pandas Bibliothek wird das Ergebnis als CSV abgespeichert.
-    Anschließend wird das Bow, sowie das dazugehörige Dictionary, zurückgegeben.
+    Anschließend wird das BoW sowie das dazugehörige Dictionary zurückgegeben.
     """
     vectorizer = CountVectorizer(min_df=12)
     bow = vectorizer.fit_transform(review)
@@ -118,9 +118,9 @@ def create_bow(review):
 def create_tfidf(review):
     """
     Hier wird mithilfe der SKLearn Bibliothek eine TF-IDF Matrix erstellt.
-    Dabei werden nur Wörter betrachtet, der Dokumentenhäufigkeit mindestes bei 12 liegt.
+    Dabei werden nur Wörter betrachtet, deren Dokumentenhäufigkeit mindestes bei 12 liegt.
     Mithilfe der Pandas Bibliothek wird das Ergebnis als CSV abgespeichert.
-    Anschließend wird die TF-IDF Matrix, sowie das dazugehörige Dictionary, zurückgegeben.
+    Anschließend wird die TF-IDF Matrix sowie das dazugehörige Dictionary zurückgegeben.
     """
     vectorizer = TfidfVectorizer(min_df=12)
     tfidf = vectorizer.fit_transform(review)
@@ -134,10 +134,10 @@ def create_tfidf(review):
 # 4.1 LSA
 def lsa_analysis(vector,dictionary,review):
     """
-    Als Input erhält diese Funktion ein Vector Model (Bow oder TF-IDF), 
+    Als Input erhält diese Funktion ein Vektor Modell (Bow oder TF-IDF), 
     das Vokabular und die Reviews.
     Die SKLearn Bibliothek wird genutzt, um ein LSA zu erstellen 
-    und die Pandas Bibliothek um dies zu visualisieren.
+    und die Pandas Bibliothek, um dies zu visualisieren.
     Es werden die wichtigsten Themen / Wörter ausgegeben
     und die Ergebnisse als CSV gespeichert.
     Anschließend wird die LSA zurückgegeben. 
@@ -165,13 +165,13 @@ def lsa_analysis(vector,dictionary,review):
 # 4.2 LDA und Coherence Score
 def lda_analysis(review):
     """
-    In dieser Funktion wird als erstes ein neues Dictionary, BOW  und ID2Word erstellt.
+    In dieser Funktion wird als erstes ein neues Dictionary, BoW und ID2Word erstellt.
     Anschließend werden 8 LDA Modelle erstellt und 
-    von diesen der Cohrence Score berechnet und als CSV gespeichert.
+    von diesen der Coherence Score berechnet und als CSV gespeichert.
     Da in diesem Beispiel die Anzahl 3 als guter Wert herausgekommen ist, 
-    wird anschließend ein SDA Model mit 3 Themen aufgestellt.
-    Die Ergebnisse dieses Models werden als CSV gespeichert,
-    die wichtigsten Thema ausgegeben und anschließend wird das Model zurückgegeben.
+    wird anschließend ein SDA Modell mit 3 Themen aufgestellt.
+    Die Ergebnisse dieses Modells werden als CSV gespeichert,
+    die wichtigsten Thema ausgegeben und anschließend wird das Modell zurückgegeben.
     """
     word_array = []
     for sentence in review:
