@@ -25,6 +25,7 @@ conda env create -n crocs_anaylse --file conda_crocs_analyse.yaml
 ## Ausführung des Programms
 ```cmd
 conda activate crocs_anaylse
+cd crocs_analyse
 python .\crocs_analyse.py
 ```
 
